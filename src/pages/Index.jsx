@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <div className="h-screen w-screen flex items-center justify-center">
       <div>
-        <h1 className="text-3xl text-center">Welcome to the Live Podcasting Communities Management System</h1>
+        <h1 className="text-4xl text-center">Welcome to the Live Podcasting Communities Management System</h1>
         <p className="text-center">
           Integrate and sync your live podcast shows across multiple social media platforms.
         </p>
