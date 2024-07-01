@@ -1,14 +1,21 @@
-// Update this page (the content is just a fallback if you fail and example)
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="h-screen w-screen flex items-center justify-center">
-      {/* Update with components here - default to put new layout sections as separate components in the components folder, and import them here */}
       <div>
-        <h1 className="text-3xl text-center">Your Blank Canvas</h1>
+        <h1 className="text-3xl text-center">Welcome to the Live Podcasting Communities Management System</h1>
         <p className="text-center">
-          Chat with the agent to start making edits.
+          Integrate and sync your live podcast shows across multiple social media platforms.
         </p>
+        <div className="flex justify-center mt-4 space-x-2">
+          <Button variant="outline" onClick={() => navigate("/about")}>About</Button>
+          <Button variant="outline" onClick={() => navigate("/contact")}>Contact</Button>
+        </div>
       </div>
     </div>
   );
